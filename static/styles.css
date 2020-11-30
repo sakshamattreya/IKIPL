@@ -1,0 +1,265 @@
+html{
+	height: 100%;
+	margin: 0;
+}
+
+
+body{
+	font-family: Arial, Helvetica, sans-serif;
+	height: 100%;
+	margin: 0;
+	background-color: #ffffff;
+}
+
+/* Website Title */
+.container{
+	background-color: rgb(5, 5, 44);
+	color:#ffffff;
+    padding: 20px;
+	display: block;
+	text-align: center;
+	border-bottom: 5px solid salmon;
+}
+
+.container-heading{
+    margin: 0;
+}
+
+.heading_first{
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 100;
+}
+
+.heading_second{
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 800;
+	font-style: italic;
+}
+
+.description p{
+    font-style: italic;
+    font-size: 12px;
+	font-weight: 100;
+    margin: 0;
+}
+
+/* Prediction Area */
+.prediction-area{
+	position: relative;
+	display: flex;
+	justify-content: space-evenly;
+	padding: 20px 40px;
+	background-image: url(sTADIUM.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: top;
+}
+
+.ipl-banner-top{
+	display: inline-block;
+	position: relative;
+	width: 95%;
+	margin-top: 20px;
+	height: 50px;
+	border-radius: 15px;
+	-webkit-box-shadow: inset 7px 6px 18px -2px rgba(94,94,94,0.61);
+	-moz-box-shadow: inset 7px 6px 18px -2px rgba(94,94,94,0.61);
+	box-shadow: inset 7px 6px 18px -2px rgba(94,94,94,0.61);
+}
+
+.div2{
+	background-color: rgba(250, 235, 215, 0.74);
+	display: inline-block;
+	width: 35%;
+	height: 60%;
+	text-align: center;
+}
+.results{
+	background-color: rgba(250, 235, 215, 0.74);
+	display: inline-block;
+	width: 35%;
+	height: 60%;
+	text-align: center;
+}
+
+
+.ipl-banner-bottom{
+	background-color: rgb(148, 148, 173);
+	display: inline-block;
+	width: 95%;
+	height: 50px;
+	position: relative;
+	top: -5px;
+	border-radius: 15px;
+	-webkit-box-shadow: inset 7px 6px 18px -2px rgba(94,94,94,0.61);
+	-moz-box-shadow:inset  7px 6px 18px -2px rgba(94,94,94,0.61);
+	box-shadow:inset 7px 6px 18px -2px rgba(94,94,94,0.61);
+}
+
+.image-width{
+	height: 50px;
+	margin-left: 100px;
+}
+
+.slider-frame{
+	width: 100%;
+	height: 100%;
+	border-radius: 15px;
+	overflow: hidden;
+}
+
+@keyframes slide-animation-left{
+	0% {right: 0%;}
+	6% {right: 10%;}
+	12% {right: 15%;}
+	18% {right: 20%}
+	24% {right: 25%;}
+	30% {right: 30%;}
+	36% {right: 35%;}
+	42% {right: 40%;}
+	50% {right: 45%;}
+	56% {right: 50%;}
+	62% {right: 0%;}
+	68% {right: -50%;}
+	74% {right: -40%;}
+	80% {right: -30%;}
+	86% {right: -20%;}
+	92% {right: -10%;}
+	100% {right: -0%;}
+}
+
+@keyframes slide-animation-right{
+	0% {right: 0%;}
+	6% {right: 10%;}
+	12% {right: 30%;}
+	18% {right: 40%}
+	24% {right: 50%;}
+	30% {right: 60%;}
+	36% {right: 70%;}
+	42% {right: 80%;}
+	50% {right: 80%;}
+	56% {right: 80%;}
+	62% {right: 90%;}
+	68% {right: 100%;}
+	74% {right: 90%;}
+	80% {right: 70%;}
+	86% {right: 50%;}
+	92% {right: 20%;}
+	100% {right: 0%;}
+}
+
+.slide-images-left{
+	width: 100%;
+	height: 100%;
+	position: relative;
+	animation-name: slide-animation-left;
+	animation-duration: 50s;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
+	animation-timing-function: ease-out;
+}
+
+.slide-images-right{
+	width: 100%;
+	height: 100%;
+	position: relative;
+	animation-name: slide-animation-right;
+	animation-duration: 50s;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
+	animation-timing-function: ease-out;
+}
+
+.image-container{
+	position: relative;
+	float: left;
+}
+
+/* Form */
+.form-input{
+	background-color: #E9E9E9;
+	width: 80%;
+	height: 30px;
+	border-radius: 3px;
+	border: 0;
+	text-align: center;
+	-webkit-box-shadow: 7px 3px 16px -10px rgba(0,0,0,0.75);
+	-moz-box-shadow: 7px 3px 16px -10px rgba(0,0,0,0.75);
+	box-shadow: 7px 3px 16px -10px rgba(0,0,0,0.75);
+	margin-top: 15px;
+}
+
+.align-center{
+	padding: 0 30px;
+}
+
+/* Predict Button */
+.myButton {
+	background-color:#060525;
+	border-radius: 5px;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:15px;
+	font-weight:bold;
+	padding:7px 30px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+
+	text-decoration:none;
+	transition: 0.5s ease-out;
+}
+
+.myButton:hover{
+	background-color: #6033a7;
+	color: #000000;
+	box-shadow: inset 7px 3px 16px -10px rgba(0,0,0,0.75);
+}
+
+.myButton:active {
+	position:relative;
+	top:1px;
+}
+
+/* Footer */
+.footer{
+	background-color: rgb(5, 5, 44);
+	color: #ffffff;
+    padding: 20px;
+	display: block;
+	text-align: center;
+	border-top: 5px solid salmon;
+	padding: 12px;
+    text-align: center;
+}
+
+.contact-icon{
+	color: #000000;
+	padding: 7px;
+}
+
+.contact-icon:hover{
+	color: #a6a19a;
+}
+
+.footer-description{
+	margin: 0;
+	font-size: 12px;
+	font-weight: 100;
+}
+
+/* Result */
+.results{
+  display: inline-block;
+  height: 380px;
+  width:auto;
+  line-height: 400px;
+  text-align: center;
+}
+.results-p{
+  height: 380px;
+  line-height: 400px;
+  text-align: center;
+}
+
