@@ -4,7 +4,7 @@ import pickle
 import numpy as np
 
 # Loading the CLassifier model
-filename = 'lassoReg.pkl'
+filename = 'linearReg.pkl'
 regressor = pickle.load(open(filename, 'rb'))
 
 app = Flask(__name__)
