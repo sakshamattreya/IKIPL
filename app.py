@@ -4,7 +4,7 @@ import pickle
 import numpy as np
 
 # Loading the CLassifier model
-filename = 'ridgeReg.pkl'
+filename = 'ridReg.pkl'
 regressor = pickle.load(open(filename, 'rb'))
 
 app = Flask(__name__)
